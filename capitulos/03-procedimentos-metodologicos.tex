@@ -1,27 +1,36 @@
-%%=============================================================================
-%% CAPITULO 3 -- PROCEDIMENTOS METODOLOGICOS
-%%=============================================================================
+%% CAPITULO 3 -- PROCEDIMENTOS METODOLOGICOS (esqueleto da dissertação)
 
 \section{Procedimentos metodológicos}
 
-Apresente, de forma clara e objetiva, o modo pelo qual o projeto foi
-implementado. Após um breve texto introdutório, explicite a metodologia em etapas
-ou ações. Poderá, ainda, fazer referência às técnicas ou a detalhes específicos.
-Explique como se deu o acompanhamento do desenvolvimento do projeto e a avaliação
-de sua efetividade.
+A pesquisa segue o paradigma da \textit{Design Science Research} e se organiza
+como um experimento computacional pareado. Sobre um corpus de documentos
+institucionais públicos já reunido pelo autor, serão comparadas quatro
+estratégias de contextualização (\textit{chunking} fixo com sobreposição,
+recursivo, semântico e \textit{parent-child} sensível à estrutura), além de uma
+ablação de metadados. Cada estratégia responderá ao mesmo conjunto de 60 a 100
+perguntas de referência, incluindo perguntas sem resposta suficiente no corpus,
+com índice vetorial exato e modelo gerador mantidos constantes, conforme o fluxo
+da Figura~\ref{fig:fluxo-avaliacao}.
 
-\subsection{Tipo e abordagem da pesquisa}
+\begin{figure}[htb]
+  \caption{Fluxo de avaliação das estratégias de contextualização documental}
+  \label{fig:fluxo-avaliacao}
+  \centering
+  \fbox{\parbox{2.7cm}{\centering\small Documentos institucionais públicos}}
+  $\rightarrow$
+  \fbox{\parbox{2.7cm}{\centering\small Estratégia de contextualização}}
+  $\rightarrow$
+  \fbox{\parbox{2.7cm}{\centering\small Recuperação e geração da resposta}}
+  $\rightarrow$
+  \fbox{\parbox{2.7cm}{\centering\small Avaliação em 5 dimensões e IRD}}
+  \fonte{Elaborada pelo autor (2026).}
+\end{figure}
 
-Classifique a pesquisa quanto à natureza, aos objetivos, à abordagem e aos
-procedimentos técnicos adotados.
-
-\subsection{Instrumentos de coleta de dados}
-
-Descreva os instrumentos utilizados, o universo e a amostra, os critérios de
-inclusão e exclusão e o período de coleta.
-
-\subsection{Procedimentos de análise}
-
-Explique como os dados foram tratados e analisados, indicando as categorias de
-análise e, quando houver, as ferramentas estatísticas ou de análise de conteúdo
-empregadas.
+Por ser um instrumento novo, o IRD será validado antes da execução principal.
+Os seis critérios passam primeiro por validação de conteúdo com um especialista
+em Ciência da Informação; um piloto com pelo menos 30 respostas servirá apenas
+para revisar o guia de codificação; em seguida, um estudo com cerca de 100
+respostas codificadas por dois avaliadores independentes estimará o alfa de
+Krippendorff por critério, e o menor valor será tomado como a confiabilidade do
+índice. A validade convergente será verificada contra uma nota humana de
+rastreabilidade atribuída por dois especialistas de outros órgãos públicos.
