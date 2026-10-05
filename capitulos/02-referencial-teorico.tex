@@ -2,10 +2,13 @@
 
 \section{Referencial teórico}
 
-A avaliação de sistemas RAG tem se apoiado em métricas automáticas que separam
-a qualidade da recuperação da qualidade da geração. Ao propor o RAGAS, um
-\textit{framework} de avaliação sem referência humana, \citeonline{es2023ragas}
-resumem por que essa avaliação é difícil:
+Em um sistema RAG, o modelo gerador combina o conhecimento armazenado em seus
+parâmetros com trechos recuperados de uma base documental externa no momento da
+pergunta \parencite{lewis2020rag}. Avaliar esse sistema exige, portanto,
+observar tanto a recuperação quanto a geração, e é essa separação que orienta o
+RAGAS, \textit{framework} de avaliação sem referência humana proposto por
+\citeonline{es2023ragas}. Os próprios autores resumem por que essa avaliação é
+difícil:
 
 \begin{citacao}
 Evaluating RAG architectures is, however, challenging because there are several
